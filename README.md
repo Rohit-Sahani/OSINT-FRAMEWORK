@@ -81,3 +81,11 @@ Beginners are encouraged to try modifying or adding modules — even small impro
 This tool is for educational and ethical security testing purposes only.
 Do not use it against systems you don’t have permission to test.
 The author is not responsible for any misuse.
+
+
+
+Important: Make sure that all the required files and modules — including whois_lookup.py, subdomain.py, dir_enum.py, mini_naabu.py, and the wordlists (sub_wordlist.txt and dir_wordlist.txt) — are in the same folder as osint_runner.py. This ensures the framework runs correctly and can access all dependencies.
+
+
+
+<img width="1909" height="934" alt="Screenshot 2025-08-29 234537" src="https://github.com/user-attachments/assets/c7d6e0af-ee9b-48d6-8d8f-9b89da615d51" />
