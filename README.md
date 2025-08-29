@@ -14,7 +14,7 @@ This is just the first version — lightweight, educational, and easy to underst
 
 ⚙️ Installation
 Clone the repository:
-git clone https://github.com/yourusername/osint-runner.git
+git clone https://github.com/Rohit-Sahani/OSINT.git
 cd osint-runner
 
 Install dependencies:
