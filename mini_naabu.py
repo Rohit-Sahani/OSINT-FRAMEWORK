@@ -4,8 +4,9 @@
 import socket
 
 def scan(ip):
-    ports_to_scan = [22, 21, 80, 443, 8080]  # only 5 ports for faster scanning
-    print(f"Scanning {ip} on ports: {ports_to_scan}\n")
+    # Full port range from 1 to 65535
+    ports_to_scan = range(1, 65536)  
+    print(f"Scanning {ip} on ports: 1–65535\n")
 
     for port in ports_to_scan:
         try:
@@ -15,13 +16,9 @@ def scan(ip):
 
             if result == 0:
                 print(f"[OPEN] Port {port}")
-            else:
-                print(f"[CLOSED] Port {port}")
-
             sock.close()
         except Exception as e:
             print(f"Error scanning port {port}: {e}")
-
 
 if __name__ == "__main__":
     target = input("Enter IP to scan: ").strip()
